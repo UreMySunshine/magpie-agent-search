@@ -1,0 +1,5 @@
+.DS_Store
+/.env
+/config.json
+/docs/smoke.json
+/node_modules/

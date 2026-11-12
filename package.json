@@ -1,0 +1,8 @@
+{
+  "name": "magpie-agent-search", "version": "0.3.0", "private": true,
+  "description": "Magpie web search source and tools backed by ten search engines",
+  "type": "module", "main": "./index.js", "engines": {"node": ">=22"},
+  "scripts": {"test": "node --test", "check": "node --check scripts/request.js"},
+  "license": "MIT",
+  "magpie": {"name": "Agent Search"}
+}

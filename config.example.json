@@ -1,0 +1,58 @@
+{
+  "timeoutMs": 20000,
+  "maxAttempts": 3,
+  "engines": {
+    "firecrawl": {
+      "enabled": true,
+      "key": "",
+      "priority": 50
+    },
+    "exa": {
+      "enabled": true,
+      "key": "",
+      "priority": 50
+    },
+    "tavily": {
+      "enabled": true,
+      "key": "",
+      "priority": 50
+    },
+    "parallel": {
+      "enabled": true,
+      "key": "",
+      "priority": 50
+    },
+    "keenable": {
+      "enabled": true,
+      "key": "",
+      "priority": 50
+    },
+    "you": {
+      "enabled": true,
+      "key": "",
+      "priority": 50
+    },
+    "anysearch": {
+      "enabled": true,
+      "key": "",
+      "priority": 50
+    },
+    "yuanbao": {
+      "enabled": true,
+      "key": "",
+      "priority": 50,
+      "secretId": "",
+      "secretKey": ""
+    },
+    "tinyfish": {
+      "enabled": true,
+      "key": "",
+      "priority": 50
+    },
+    "querit": {
+      "enabled": true,
+      "key": "",
+      "priority": 50
+    }
+  }
+}
