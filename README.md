@@ -13,16 +13,18 @@
 
 ## 安装与验证
 
-用仓库根目录的绝对路径安装插件。以下命令会修改当前命令所连接的 Magpie 实例的搜索源配置。
+从 GitHub 安装插件，并将 Agent Search 加入 Magpie 的网页搜索源。
 
 ```sh
-magpie plugin add /absolute/path/to/magpie-agent-search
+magpie plugin add github:UreMySunshine/magpie-agent-search
 magpie search add magpie-agent-search:auto
 magpie search
 magpie tool web_search --count 3 "IANA example domains RFC 2606"
 magpie tools magpie-agent-search_agent_web_search
 magpie tools magpie-agent-search_agent_web_fetch
 ```
+
+在「插件 → 已安装」中可以看到 Agent Search 的图标。开发时也可以用 `magpie plugin add /absolute/path/to/magpie-agent-search` 安装本地目录。
 
 在「设置 → 模型 → 网页搜索」或用 `magpie search move magpie-agent-search:auto 1` 调整搜索源顺序。在 Magpie 请求日志里查看 `Agent Search` 条目，确认本次调用使用了插件。模型供应商自带的搜索可优先于此列表。
 
